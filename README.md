@@ -1,24 +1,47 @@
-# README
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Blog app
 
-Things you may want to cover:
+> a blog app built with ruby and rails
 
-* Ruby version
+## Getting Started
 
-* System dependencies
+### Setup
+```
+git clone  <https://github.com/kelomo2502/blog-app>
+```
+- run ```cd blog_app``` to enter the project folder
+- run `bundle install` to install dependencies
 
-* Configuration
+### Testing
+Tests are present in the `spec` folder.
+- run `rspec --format documentation spec/` to check all test cases
 
-* Database creation
+## Author
 
-* Database initialization
+👤 **Oyewunmi Gbenga**
 
-* How to run the test suite
+- GitHub: [@kelomo2502](https://github.com/kelomo2502)
+- Twitter: [@kelomoJs](https://twitter.com/kelomoJs)
+- LinkedIn: [Oyewunmi Gbnega](https://linkedin.com/in/oyewunmi-gbenga)
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+## 🤝 Contributing
 
-* ...
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/kelomo2502/blog-app/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
