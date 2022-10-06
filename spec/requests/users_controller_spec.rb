@@ -12,7 +12,7 @@ RSpec.describe 'Users', type: :request do
     end
   end
   context 'when GET /show' do
-    let!(:user) { User.create(name: 'Darwin', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Teacher from Mexico.', posts_counter: 0) }
+    let!(:user) { User.create(name: 'Darwin', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Teacher from Mexico.') }
     before(:example) { get user_path(user.id) }
 
     it 'should have success code of ok' do

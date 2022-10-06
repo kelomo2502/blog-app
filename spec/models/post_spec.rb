@@ -38,7 +38,7 @@ RSpec.describe Post, type: :model do
     Comment.create(post: subject, author: subject.author, text: 'Hi John!5')
     Comment.create(post: subject, author: subject.author, text: 'Hi John!6')
     Comment.create(post: subject, author: subject.author, text: 'Hi John!7')
-    expect(subject.last_five_comments.length).to eq 5
-    expect(subject.last_five_comments[0].text).to eq 'Hi John!7'
+    expect(subject.recent_five_comments.length).to eq 5
+    expect(subject.recent_five_comments[0].text).to eq 'Hi John!7'
   end
 end
