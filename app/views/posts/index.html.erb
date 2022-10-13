@@ -29,7 +29,7 @@
       <ul class="comments user-comment d-flex-2">
         Comments:
         <div class="border mb-sm">
-          <% post.recent_five_comments.each do |comment| %>
+          <% post.recent_five_comments.includes([:author]).each do |comment| %>
             <li class="user-bio_div d-flex-2"><%= comment.author.name %>: <%= comment.text %> </li>
           <% end %>
         </div>
