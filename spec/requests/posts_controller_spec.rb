@@ -7,7 +7,7 @@ RSpec.describe 'Posts', type: :request do
     end
 
     it 'should have success code of ok' do
-      expect(response).to have_http_status(:ok)
+      expect(response).to have_http_status(200)
     end
 
     it "should render the 'index' template" do
