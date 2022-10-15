@@ -13,10 +13,9 @@ gem 'sprockets-rails'
 
 gem 'devise'
 
+gem 'bootstrap', '~> 5.0'
 
-gem "bootstrap", "~> 5.0"
-
-gem "bootstrap_form", "~> 5.1"
+gem 'bootstrap_form', '~> 5.1'
 
 gem 'sass-rails'
 
@@ -66,8 +65,8 @@ end
 
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
+  gem 'letter_opener'
   gem 'web-console'
-  gem "letter_opener"
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
