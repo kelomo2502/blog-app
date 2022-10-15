@@ -6,23 +6,20 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag "application",
-    'http://fonts.googleapis.com/css?family=Ubuntu',
-    'https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap',
-    media: 'all',  "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "application", media: 'all',  "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
-    <header class="d-flex">
-      <nav class="d-flex">
-        <ul class="d-flex">
-          <li><a href="/">Blog </a></li>
-        </ul>
-      </nav>
-    </header>
+  <body class="container">
+    
     <main>
-      <%= yield %>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+      <% if user_signed_in? %>
+        <%= link_to 'Sign Out', destroy_user_session_path, method: :delete %>
+      <% else %><% end %>
+        <link_to "Sign out" method: :delete %>
+        <%= yield %>
     </main>
   </body>
 </html>
