@@ -22,7 +22,10 @@
       </nav>
     </header>
     <main>
-      <%= yield %>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+        <link_to "Sign out" method: :delete %>
+        <%= yield %>
     </main>
   </body>
 </html>
