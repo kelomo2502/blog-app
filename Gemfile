@@ -13,6 +13,11 @@ gem 'sprockets-rails'
 
 gem 'devise'
 
+
+gem "bootstrap", "~> 5.0"
+
+gem "bootstrap_form", "~> 5.1"
+
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 1.1'
 
